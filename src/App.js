@@ -1,24 +1,21 @@
-
 import React from 'react';
-
+import Tracklist from './Tracklist';
 
 function App() {
+  const [tracks, setTracks] = useState([
+    { id: 1, name: 'Track 1', artist: 'Artist 1', album: 'Album 1' },
+    { id: 2, name: 'Track 2', artist: 'Artist 2', album: 'Album 2' },
+    { id: 3, name: 'Track 3', artist: 'Artist 3', album: 'Album 3' },
+  ]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn Reacccc
-        </a>
-      </header>
-    </div>
+    <>
+      <div>
+        <h1>Track List</h1>
+        <Tracklist tracks={tracks}/>
+      </div>
+    
+    </>
   );
 }
 
