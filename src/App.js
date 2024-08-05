@@ -1,5 +1,5 @@
 import React, { useState }from 'react';
-import TrackList from './components/TrackList';
+import Tracklist from './Components/Tracklist';
 
 function App() {
   const [tracks, setTracks] = useState([
@@ -12,7 +12,7 @@ function App() {
     <>
       <div>
         <h1>Track List</h1>
-        <TrackList tracks={tracks}/>
+        <Tracklist tracks={tracks}/>
       </div>
     
     </>

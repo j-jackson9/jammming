@@ -1,7 +1,7 @@
 import React from 'react';
 import Track from './Track';
 
-const TrackList = ({ tracks }) => {
+const Tracklist = ({ tracks }) => {
 
 return (
     <>
@@ -12,4 +12,4 @@ return (
 )
 }
 
-export default TrackList;
+export default Tracklist;
